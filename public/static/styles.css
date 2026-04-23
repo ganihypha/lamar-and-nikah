@@ -1,0 +1,240 @@
+/* Lamarr & Nikkah Planner - Custom Styles */
+
+.nav-link {
+  @apply px-3 py-2 rounded-lg hover:bg-white/20 transition-colors;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+  background: white;
+}
+
+.form-input:focus {
+  border-color: #f43f5e;
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #f43f5e, #ec4899);
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(244, 63, 94, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(244, 63, 94, 0.3);
+}
+
+.btn-secondary {
+  background: #fff1f2;
+  color: #be123c;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  border: 1px solid #fecdd3;
+}
+
+.btn-secondary:hover {
+  background: #ffe4e6;
+}
+
+.result-card {
+  background: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.from-emerald-500.to-green-600 { background: linear-gradient(to bottom right, #10b981, #059669); }
+.from-rose-500.to-pink-600 { background: linear-gradient(to bottom right, #f43f5e, #db2777); }
+.from-amber-500.to-orange-600 { background: linear-gradient(to bottom right, #f59e0b, #ea580c); }
+
+.stat-card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+  border: 1px solid #fecdd3;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: white;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.tab-btn.active {
+  background: linear-gradient(to right, #f43f5e, #ec4899);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 6px rgba(244, 63, 94, 0.25);
+}
+
+.check-item {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #fecdd3;
+  transition: all 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.check-item:hover {
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.08);
+}
+
+.check-item.done {
+  background: #f0fdf4;
+  border-color: #86efac;
+  opacity: 0.7;
+}
+
+.check-item.done .check-title {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.check-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fecdd3;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+
+.check-checkbox:hover {
+  border-color: #f43f5e;
+  background: #fff1f2;
+}
+
+.check-item.done .check-checkbox {
+  background: linear-gradient(to bottom right, #10b981, #059669);
+  border-color: #10b981;
+  color: white;
+}
+
+.priority-tinggi { color: #dc2626; background: #fee2e2; }
+.priority-sedang { color: #d97706; background: #fef3c7; }
+.priority-rendah { color: #059669; background: #d1fae5; }
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.adat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #fecdd3;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.adat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(244, 63, 94, 0.12);
+}
+
+.adat-number {
+  position: absolute;
+  top: -12px;
+  left: 1.5rem;
+  background: linear-gradient(to right, #f43f5e, #ec4899);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(244, 63, 94, 0.3);
+}
+
+.timeline-phase {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border-left: 4px solid #f43f5e;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.timeline-task {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.timeline-task:hover {
+  background: #fff1f2;
+}
+
+.timeline-task.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.breakdown-row {
+  border-bottom: 1px solid #fecdd3;
+}
+
+.breakdown-row td {
+  padding: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .nav-link span { display: none; }
+}
